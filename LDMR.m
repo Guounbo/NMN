@@ -1,4 +1,4 @@
-function [Xn] = LDMR(y, A, D, trls, Xinit, Einit, alpha, imgsize)
+function [Xn] = NMN(y, A, D, trls, Xinit, Einit, alpha, imgsize)
 rho =1.01;
 mu = 0.0001;
 opts.string='lp';
