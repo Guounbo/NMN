@@ -39,7 +39,7 @@ for i = 1:n
     Xs = Proj*y;
     Es = y-trdat*Xs;
     [w] = Weight(y, trdat, Xs, trls, delta);
-   [X] = LDMR(y, trdat, w, trls, Xs, Es, alpha,  imgsize);
+   [X] = NMN(y, trdat, w, trls, Xs, Es, alpha,  imgsize);
    [label] = classifier(trdat, X, trls, imgsize);  
     ID= [ID label];
 end
